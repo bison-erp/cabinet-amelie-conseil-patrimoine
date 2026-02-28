@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cabinet Amélie Conseil & Patrimoine — Agent Général AXA Prévoyance et Patrimoine à Poissy. Prévoyance, santé, patrimoine et retraite pour dirigeants et entreprises.">
+    <title>Cabinet Amélie Conseil & Patrimoine | Prévoyance & Patrimoine à Poissy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <img src="images/logo.png" alt="Chargement..." class="loader-logo">
+        <div class="loader-bar"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <a href="tel:0785700879"><i class="fas fa-phone"></i> 07 85 70 08 79</a>
+                <a href="mailto:amelie.goncalves.a2p@axa.fr"><i class="fas fa-envelope"></i> amelie.goncalves.a2p@axa.fr</a>
+                <span><i class="fas fa-map-marker-alt"></i> Poissy (78)</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="https://www.linkedin.com/in/amelie-fernandes" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Espace Client AXA</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header — Glassmorphism floating pill -->
+    <header class="header" id="header">
+        <div class="nav-wrapper">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Cabinet Amélie Conseil & Patrimoine">
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="active">Accueil</a>
+                <a href="a-propos.html">À propos</a>
+                <div class="nav-item">
+                    <a href="prevoyance.html">Prévoyance & Santé</a>
+                    <div class="dropdown">
+                        <a href="prevoyance.html#dirigeant">Prévoyance Dirigeant</a>
+                        <a href="prevoyance.html#entreprise">Prévoyance Entreprise</a>
+                        <a href="prevoyance.html#sante">Complémentaire Santé</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="patrimoine.html">Patrimoine & Retraite</a>
+                    <div class="dropdown">
+                        <a href="patrimoine.html#assurance-vie">Assurance Vie</a>
+                        <a href="patrimoine.html#retraite">Audit Retraite</a>
+                        <a href="patrimoine.html#strategie">Stratégie Patrimoniale</a>
+                    </div>
+                </div>
+                <a href="expertises.html">Expertises</a>
+                <a href="pole-expertise.html">Pôle d'Expertise</a>
+                <a href="contact.html" class="nav-cta">Contact</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Hero — Cinematic fullscreen -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="images/poissy-place.jpg" alt="Poissy">
+        </div>
+        <div class="hero-overlay"></div>
+        <canvas id="particles-canvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge"><i class="fas fa-award"></i> Agent Général AXA Prévoyance & Patrimoine</div>
+            <div class="hero-logo">
+                <img src="images/logo.png" alt="Cabinet Amélie Conseil & Patrimoine">
+            </div>
+            <h1>Votre Protection, <em>Mon Expertise</em></h1>
+            <p class="hero-subtitle">Accompagnement sur-mesure en prévoyance, santé, patrimoine et retraite pour dirigeants, professions libérales et particuliers.</p>
+            <div class="hero-ctas">
+                <a href="contact.html" class="btn btn-primary">Prendre Contact <i class="fas fa-arrow-right"></i></a>
+                <a href="#services" class="btn btn-outline-light">Découvrir nos services</a>
+            </div>
+        </div>
+        <a href="#services" class="hero-scroll">
+            <span>Découvrir</span>
+            <div class="scroll-line"></div>
+        </a>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <div class="marquee-item"><span class="dot"></span>Prévoyance Dirigeant</div>
+            <div class="marquee-item"><span class="dot"></span>Complémentaire Santé</div>
+            <div class="marquee-item"><span class="dot"></span>Patrimoine & Retraite</div>
+            <div class="marquee-item"><span class="dot"></span>Assurance Vie</div>
+            <div class="marquee-item"><span class="dot"></span>Ingénierie Patrimoniale</div>
+            <div class="marquee-item"><span class="dot"></span>Prévoyance Entreprise</div>
+            <div class="marquee-item"><span class="dot"></span>Audit Retraite</div>
+            <div class="marquee-item"><span class="dot"></span>Pacte d'Associés</div>
+            <!-- Duplicate for seamless loop -->
+            <div class="marquee-item"><span class="dot"></span>Prévoyance Dirigeant</div>
+            <div class="marquee-item"><span class="dot"></span>Complémentaire Santé</div>
+            <div class="marquee-item"><span class="dot"></span>Patrimoine & Retraite</div>
+            <div class="marquee-item"><span class="dot"></span>Assurance Vie</div>
+            <div class="marquee-item"><span class="dot"></span>Ingénierie Patrimoniale</div>
+            <div class="marquee-item"><span class="dot"></span>Prévoyance Entreprise</div>
+            <div class="marquee-item"><span class="dot"></span>Audit Retraite</div>
+            <div class="marquee-item"><span class="dot"></span>Pacte d'Associés</div>
+        </div>
+    </div>
+
+    <!-- 3 Piliers -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Nos domaines d'intervention</span>
+                <h2>Trois Piliers au Service de Votre Avenir</h2>
+                <div class="section-line"></div>
+                <p>Une approche globale et personnalisée pour protéger ce qui compte le plus : votre santé, votre activité et votre patrimoine.</p>
+            </div>
+            <div class="pillars-grid">
+                <div class="pillar-card reveal">
+                    <div class="pillar-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Prévoyance</h3>
+                    <p>Protégez-vous et vos collaborateurs face aux aléas de la vie. Arrêt de travail, invalidité, décès : nous construisons ensemble une couverture adaptée à votre situation personnelle et professionnelle.</p>
+                    <a href="prevoyance.html" class="pillar-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="pillar-card reveal">
+                    <div class="pillar-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h3>Santé</h3>
+                    <p>Des solutions de complémentaire santé sur-mesure pour les dirigeants comme pour les entreprises, de 1 à plus de 1 000 salariés. Votre bien-être est notre priorité.</p>
+                    <a href="prevoyance.html#sante" class="pillar-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="pillar-card reveal">
+                    <div class="pillar-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Patrimoine & Retraite</h3>
+                    <p>Optimisez votre épargne, préparez sereinement votre retraite et construisez une stratégie patrimoniale pérenne. Audit complet et solutions personnalisées.</p>
+                    <a href="patrimoine.html" class="pillar-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="section section-cream">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal-left">
+                    <img src="images/poissy-mairie.jpg" alt="Cabinet situé au cœur de Poissy">
+                </div>
+                <div class="about-content reveal-right">
+                    <span class="section-label" style="text-align:left;padding-left:0">À propos</span>
+                    <h2>Amélie Gonçalves</h2>
+                    <p>Agent Général AXA Prévoyance et Patrimoine, j'ai fondé le <strong>Cabinet Amélie Conseil & Patrimoine</strong> avec une conviction forte : chaque dirigeant mérite un accompagnement personnalisé et humain pour protéger son activité et construire son avenir.</p>
+                    <p>Installée en plein cœur de <strong>Poissy</strong>, je mets mon expertise au service des dirigeants d'entreprise, professions libérales, cadres supérieurs et particuliers. Ma mission : vous offrir une protection sociale complète et une stratégie patrimoniale sur-mesure.</p>
+                    <div class="about-signature">Amélie Gonçalves</div>
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <div class="about-stat-number">100%</div>
+                            <div class="about-stat-label">Personnalisé</div>
+                        </div>
+                        <div class="about-stat">
+                            <div class="about-stat-number">360°</div>
+                            <div class="about-stat-label">Vision globale</div>
+                        </div>
+                        <div class="about-stat">
+                            <div class="about-stat-number">1-1000+</div>
+                            <div class="about-stat-label">Salariés couverts</div>
+                        </div>
+                    </div>
+                    <div style="margin-top:30px;">
+                        <a href="a-propos.html" class="btn btn-outline-dark">Découvrir mon parcours <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services détaillés -->
+    <section class="section" id="detail-services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Nos solutions</span>
+                <h2>Un Accompagnement Global et Sur-Mesure</h2>
+                <div class="section-line"></div>
+                <p>Du dirigeant au salarié, du particulier au professionnel, nous proposons des solutions adaptées à chaque profil et chaque besoin.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-number">01</div>
+                    <h4>Prévoyance Dirigeant</h4>
+                    <p>Protégez votre activité et votre famille en cas d'arrêt de travail, d'invalidité ou de décès. Des solutions sur-mesure pour ne jamais mettre en péril votre entreprise.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-number">02</div>
+                    <h4>Prévoyance Entreprise</h4>
+                    <p>Offrez à vos salariés une couverture prévoyance complète. De 1 à plus de 1 000 collaborateurs, nous adaptons les garanties à votre structure.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-number">03</div>
+                    <h4>Complémentaire Santé</h4>
+                    <p>Des contrats santé individuels ou collectifs, conformes aux obligations légales et optimisés pour le meilleur rapport garanties/cotisations.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-number">04</div>
+                    <h4>Assurance Vie & Épargne</h4>
+                    <p>Optimisez votre épargne au-delà des livrets réglementés. Profitez de solutions d'investissement diversifiées et performantes.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-number">05</div>
+                    <h4>Audit & Préparation Retraite</h4>
+                    <p>Audit complet de vos droits à la retraite, estimation de vos revenus futurs et mise en place de stratégies de compensation adaptées.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-number">06</div>
+                    <h4>Ingénierie Patrimoniale</h4>
+                    <p>Stratégie patrimoniale globale, pacte d'associés, Drouot Estate... Des expertises pointues pour les situations les plus complexes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Devis en ligne CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="section-header reveal" style="margin-bottom:50px;">
+                <span class="section-label" style="color:var(--gold-light)">Simulez votre couverture</span>
+                <h2 style="color:var(--white)">Demandez Votre Devis en Ligne</h2>
+                <div class="section-line"></div>
+                <p style="color:rgba(255,255,255,.55)">Obtenez une estimation personnalisée pour votre complémentaire santé ou votre prévoyance en quelques clics.</p>
+            </div>
+            <div class="cta-grid reveal">
+                <a href="contact.html?type=sante" class="cta-card">
+                    <div class="cta-card-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h4>Devis Santé</h4>
+                    <p>Complémentaire santé individuelle ou collective</p>
+                </a>
+                <a href="contact.html?type=prevoyance" class="cta-card">
+                    <div class="cta-card-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4>Devis Prévoyance</h4>
+                    <p>Protection dirigeant ou couverture entreprise</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approche / Process -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Notre méthode</span>
+                <h2>Un Accompagnement en 4 Étapes</h2>
+                <div class="section-line"></div>
+                <p>Une méthodologie éprouvée pour vous offrir des solutions parfaitement adaptées à votre situation.</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-step reveal">
+                    <div class="process-number">1</div>
+                    <h4>Écoute</h4>
+                    <p>Nous prenons le temps de comprendre votre situation, vos besoins et vos objectifs.</p>
+                </div>
+                <div class="process-step reveal">
+                    <div class="process-number">2</div>
+                    <h4>Analyse</h4>
+                    <p>Audit complet de votre protection sociale et de votre patrimoine existant.</p>
+                </div>
+                <div class="process-step reveal">
+                    <div class="process-number">3</div>
+                    <h4>Préconisation</h4>
+                    <p>Solutions sur-mesure, transparentes et adaptées à votre budget.</p>
+                </div>
+                <div class="process-step reveal">
+                    <div class="process-number">4</div>
+                    <h4>Suivi</h4>
+                    <p>Accompagnement dans la durée avec des points réguliers pour ajuster vos garanties.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pôle d'expertise preview -->
+    <section class="section section-cream">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Notre réseau</span>
+                <h2>Un Pôle d'Expertise à Votre Service</h2>
+                <div class="section-line"></div>
+                <p>Au-delà de l'assurance, je m'entoure de professionnels de confiance pour vous offrir un accompagnement complet dans tous les domaines de votre vie professionnelle et personnelle.</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-card reveal">
+                    <div class="partner-icon"><i class="fas fa-balance-scale"></i></div>
+                    <h4>Notaire</h4>
+                    <p>Conseil juridique, succession, actes notariés et accompagnement patrimonial.</p>
+                </div>
+                <div class="partner-card reveal">
+                    <div class="partner-icon"><i class="fas fa-gavel"></i></div>
+                    <h4>Avocat</h4>
+                    <p>Droit des affaires, droit social, contentieux et conseil juridique personnalisé.</p>
+                </div>
+                <div class="partner-card reveal">
+                    <div class="partner-icon"><i class="fas fa-calculator"></i></div>
+                    <h4>Expert-Comptable</h4>
+                    <p>Comptabilité, fiscalité, optimisation et accompagnement de votre entreprise.</p>
+                </div>
+            </div>
+            <div style="text-align:center;margin-top:50px;" class="reveal">
+                <a href="pole-expertise.html" class="btn btn-outline-dark">Découvrir tout le réseau <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote -->
+    <section class="quote-section">
+        <div class="quote-icon reveal"><i class="fas fa-quote-left"></i></div>
+        <p class="quote-text reveal">Mon approche repose sur l'écoute, la transparence et l'authenticité. Parce que derrière chaque contrat, il y a une histoire, un projet, une famille à protéger.</p>
+        <p class="quote-author reveal">— Amélie Gonçalves</p>
+    </section>
+
+    <!-- CTA Contact -->
+    <section class="cta-section" style="padding:100px 0;">
+        <div class="container" style="text-align:center;">
+            <div class="reveal">
+                <span class="section-label" style="color:var(--gold-light)">Parlons de votre projet</span>
+                <h2 style="color:var(--white);margin-bottom:20px;">Chaque Situation est Unique</h2>
+                <p style="max-width:600px;margin:0 auto 35px;color:rgba(255,255,255,.55);font-size:1.05rem;">Prenons le temps d'échanger pour construire ensemble la solution qui vous correspond. Premier rendez-vous sans engagement.</p>
+                <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+                    <a href="contact.html" class="btn btn-primary">Me Contacter <i class="fas fa-arrow-right"></i></a>
+                    <a href="tel:0785700879" class="btn btn-outline-light"><i class="fas fa-phone"></i> 07 85 70 08 79</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <div class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.8!2d2.0469!3d48.9297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6883c8e5e3b7d%3A0x4b6c8e3e3e3e3e3e!2s11+Rue+du+11+Novembre+1918%2C+78300+Poissy!5e0!3m2!1sfr!2sfr!4v1" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="images/logo.png" alt="Cabinet Amélie Conseil & Patrimoine" class="footer-logo">
+                    <p>Agent Général AXA Prévoyance et Patrimoine, le Cabinet Amélie Conseil & Patrimoine vous accompagne dans la protection de votre activité et la construction de votre patrimoine.</p>
+                    <div class="axa-badge">
+                        <i class="fas fa-check-circle"></i> Agent Général exclusif AXA
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Accueil</a>
+                    <a href="a-propos.html">À propos</a>
+                    <a href="prevoyance.html">Prévoyance & Santé</a>
+                    <a href="patrimoine.html">Patrimoine & Retraite</a>
+                    <a href="expertises.html">Expertises</a>
+                    <a href="pole-expertise.html">Pôle d'Expertise</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <a href="prevoyance.html#dirigeant">Prévoyance Dirigeant</a>
+                    <a href="prevoyance.html#entreprise">Prévoyance Entreprise</a>
+                    <a href="prevoyance.html#sante">Complémentaire Santé</a>
+                    <a href="patrimoine.html#assurance-vie">Assurance Vie</a>
+                    <a href="patrimoine.html#retraite">Audit Retraite</a>
+                    <a href="patrimoine.html#strategie">Stratégie Patrimoniale</a>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>11 rue du 11 Novembre 1918<br>78 300 Poissy</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span><a href="tel:0785700879">07 85 70 08 79</a></span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span><a href="mailto:amelie.goncalves.a2p@axa.fr">amelie.goncalves.a2p@axa.fr</a></span>
+                    </div>
+                    <div class="footer-social" style="margin-top:16px;">
+                        <a href="https://www.linkedin.com/in/amelie-fernandes" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Cabinet Amélie Conseil & Patrimoine — N° ORIAS : 24003787</span>
+                <span>Site réalisé par <a href="https://novatis.agency" target="_blank">Novatis Agency</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <button class="scroll-top" id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
