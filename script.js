@@ -188,17 +188,19 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const el = entry.target;
-                const text = el.textContent;
-                const num = parseInt(text);
+                const target = el.getAttribute('data-target') || el.textContent;
+                const num = parseInt(target);
+                const suffix = target.replace(/[0-9]/g, '');
                 if (!isNaN(num) && num > 0 && num < 10000) {
                     let current = 0;
                     const step = Math.ceil(num / 40);
-                    const suffix = text.replace(/[0-9]/g, '');
                     const timer = setInterval(() => {
                         current += step;
                         if (current >= num) { current = num; clearInterval(timer); }
                         el.textContent = current + suffix;
                     }, 30);
+                } else {
+                    el.textContent = target;
                 }
                 counterObserver.unobserve(el);
             }

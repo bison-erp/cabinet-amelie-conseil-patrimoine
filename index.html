@@ -25,7 +25,7 @@
         <div class="container">
             <div class="top-bar-left">
                 <a href="tel:0785700879"><i class="fas fa-phone"></i> 07 85 70 08 79</a>
-                <a href="mailto:amelie.goncalves.a2p@axa.fr"><i class="fas fa-envelope"></i> amelie.goncalves.a2p@axa.fr</a>
+                <a href="mailto:amelie.fernandesdemacedo.a2p@axa.fr"><i class="fas fa-envelope"></i> amelie.fernandesdemacedo.a2p@axa.fr</a>
                 <span><i class="fas fa-map-marker-alt"></i> Poissy (78)</span>
             </div>
             <div class="top-bar-right">
@@ -35,7 +35,7 @@
         </div>
     </div>
 
-    <!-- Header — Glassmorphism floating pill -->
+    <!-- Header — Clean modern nav with logo + AXA -->
     <header class="header" id="header">
         <div class="nav-wrapper">
             <a href="index.html" class="logo">
@@ -63,6 +63,9 @@
                 <a href="expertises.html">Expertises</a>
                 <a href="pole-expertise.html">Pôle d'Expertise</a>
                 <a href="contact.html" class="nav-cta">Contact</a>
+                <div class="nav-axa">
+                    <img src="images/axa-pp-logo.png" alt="AXA Prévoyance & Patrimoine">
+                </div>
             </nav>
             <button class="menu-toggle" id="menuToggle">
                 <span></span>
@@ -73,7 +76,7 @@
     </header>
     <div class="menu-overlay" id="menuOverlay"></div>
 
-    <!-- Hero — Cinematic fullscreen -->
+    <!-- Hero — Script font, no logo -->
     <section class="hero">
         <div class="hero-bg">
             <img src="images/poissy-place.jpg" alt="Poissy">
@@ -81,12 +84,12 @@
         <div class="hero-overlay"></div>
         <canvas id="particles-canvas"></canvas>
         <div class="hero-content">
-            <div class="hero-badge"><i class="fas fa-award"></i> Agent Général AXA Prévoyance & Patrimoine</div>
-            <div class="hero-logo">
-                <img src="images/logo.png" alt="Cabinet Amélie Conseil & Patrimoine">
+            <div class="hero-badge">
+                <i class="fas fa-award"></i> Agent Général AXA Prévoyance & Patrimoine
             </div>
-            <h1>Votre Protection, <em>Mon Expertise</em></h1>
-            <p class="hero-subtitle">Accompagnement sur-mesure en prévoyance, santé, patrimoine et retraite pour dirigeants, professions libérales et particuliers.</p>
+            <div class="hero-script">Votre Protection, <span class="gold">Mon Expertise</span></div>
+            <h1>Cabinet Amélie Conseil & Patrimoine</h1>
+            <p class="hero-subtitle">Accompagnement sur-mesure en prévoyance, santé, patrimoine et retraite pour dirigeants, professions libérales et particuliers à Poissy.</p>
             <div class="hero-ctas">
                 <a href="contact.html" class="btn btn-primary">Prendre Contact <i class="fas fa-arrow-right"></i></a>
                 <a href="#services" class="btn btn-outline-light">Découvrir nos services</a>
@@ -109,7 +112,6 @@
             <div class="marquee-item"><span class="dot"></span>Prévoyance Entreprise</div>
             <div class="marquee-item"><span class="dot"></span>Audit Retraite</div>
             <div class="marquee-item"><span class="dot"></span>Pacte d'Associés</div>
-            <!-- Duplicate for seamless loop -->
             <div class="marquee-item"><span class="dot"></span>Prévoyance Dirigeant</div>
             <div class="marquee-item"><span class="dot"></span>Complémentaire Santé</div>
             <div class="marquee-item"><span class="dot"></span>Patrimoine & Retraite</div>
@@ -153,12 +155,12 @@
         </div>
     </section>
 
-    <!-- About Preview -->
+    <!-- About Preview — Photo d'Amélie à côté du texte -->
     <section class="section section-cream">
         <div class="container">
             <div class="about-grid">
                 <div class="about-image reveal-left">
-                    <img src="images/poissy-mairie.jpg" alt="Cabinet situé au cœur de Poissy">
+                    <img src="images/amelie-optimized.png" alt="Amélie Gonçalves — Agent Général AXA">
                 </div>
                 <div class="about-content reveal-right">
                     <span class="section-label" style="text-align:left;padding-left:0">À propos</span>
@@ -168,15 +170,15 @@
                     <div class="about-signature">Amélie Gonçalves</div>
                     <div class="about-stats">
                         <div class="about-stat">
-                            <div class="about-stat-number">100%</div>
+                            <div class="about-stat-number" data-target="100%">100%</div>
                             <div class="about-stat-label">Personnalisé</div>
                         </div>
                         <div class="about-stat">
-                            <div class="about-stat-number">360°</div>
+                            <div class="about-stat-number" data-target="360°">360°</div>
                             <div class="about-stat-label">Vision globale</div>
                         </div>
                         <div class="about-stat">
-                            <div class="about-stat-number">1-1000+</div>
+                            <div class="about-stat-number" data-target="1-1000+">1-1000+</div>
                             <div class="about-stat-label">Salariés couverts</div>
                         </div>
                     </div>
@@ -357,7 +359,7 @@
                     <img src="images/logo.png" alt="Cabinet Amélie Conseil & Patrimoine" class="footer-logo">
                     <p>Agent Général AXA Prévoyance et Patrimoine, le Cabinet Amélie Conseil & Patrimoine vous accompagne dans la protection de votre activité et la construction de votre patrimoine.</p>
                     <div class="axa-badge">
-                        <i class="fas fa-check-circle"></i> Agent Général exclusif AXA
+                        <img src="images/axa-pp-logo.png" alt="AXA"> Agent Général exclusif AXA
                     </div>
                 </div>
                 <div class="footer-links">
@@ -391,7 +393,7 @@
                     </div>
                     <div class="footer-contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span><a href="mailto:amelie.goncalves.a2p@axa.fr">amelie.goncalves.a2p@axa.fr</a></span>
+                        <span><a href="mailto:amelie.fernandesdemacedo.a2p@axa.fr">amelie.fernandesdemacedo.a2p@axa.fr</a></span>
                     </div>
                     <div class="footer-social" style="margin-top:16px;">
                         <a href="https://www.linkedin.com/in/amelie-fernandes" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
